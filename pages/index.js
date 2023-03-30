@@ -176,7 +176,7 @@ export default function Home() {
         <ConnectButton showBalance={false} />
       </div>
       <h3 className="text-5xl font-bold ">{"JUTC token drop"}</h3>
-      <h2 className='mb-10'><a href="https://testnet.bnbchain.org/faucet-smart" target="_blank">GET BNB testnet first! <img className="link" width="16" src="/link.svg" /></a></h2>
+      <h2 className='mb-10'><a href="https://testnet.bnbchain.org/faucet-smart" target="_blank" rel="noreferrer">GET BNB testnet first! <img className="link" width="16" src="/link.svg" /></a></h2>
       <div className="flex flex-col mb-4">
         <button
           onClick={addJUTCtoken}
