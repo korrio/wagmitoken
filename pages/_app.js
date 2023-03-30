@@ -11,6 +11,7 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { avalanche, bsc, bscTestnet } from '@wagmi/chains';
 
 /* adding gnosis network */
 const GnosisChain = {
@@ -34,7 +35,7 @@ const GnosisChain = {
 
 
 const { chains, provider } = configureChains(
-  [chain.polygonMumbai],
+  [bscTestnet],
   [
    // alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
     publicProvider(),
@@ -42,7 +43,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "My JUTC Airdrop",
   chains,
 });
 
